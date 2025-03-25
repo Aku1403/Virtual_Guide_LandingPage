@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Page Background Color */
+body {
+    background-color: #00241B; /* Dark green */
+    color: white;
+}
+
+/* Full-screen Parallax Container */
+.parallax-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* 4x4 Grid Layout */
+.parallax-grid {
+    display: grid;
+    background-color: #00241B;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Individual Parallax Image Tiles */
+.parallax-item {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Different Parallax Speeds */
+.speed-0 { transform: translateY(0px); }
+.speed-1 { transform: translateY(0px); }
+.speed-2 { transform: translateY(0px); }
+
+/* Content Box */
+.content {
+    text-align: center;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #00241B;
+    border-radius: 10px;
+    margin: -100px auto 50px;
+    width: 80%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10;
+}
+
+/* Header */
+h1 {
+    font-size: 3rem;
+    color: #000000;
+}
+
+p {
+    font-size: 1.3rem;
+    color: #444;
+    margin: 10px 0 20px;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    background: #F7B538;
+    border: none;
+    padding: 15px 35px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #087E8B;
+    color: white;
+    transform: scale(1.2);
+    box-shadow: 1 0 10px rgba(42, 128, 165, 0.9);
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease forwards;
+}
+
+.fade-in.delay {
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 12px 30px;
+    }
+
+    /* Adjust grid for smaller screens */
+    .parallax-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+/* Footer Section */
+footer {
+    background-color: #F4F3EE;  /* Dark Blue */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-info, .footer-misc {
+    max-width: 400px;
+}
+
+.footer-info h2, .footer-misc h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #EF476F;
+}
+
+footer a {
+    color: #EF476F; /* Bright Red */
+    text-decoration: none;
+    font-weight: bold;
+}
+p2{
+    color: black; /* Bright Red */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #47a6ef; /* Bright Red */
+    text-decoration: underline;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-info, .footer-misc {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

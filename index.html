@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incredible India - Virtual Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Parallax Background Grid -->
+    <div class="parallax-container">
+        <div class="parallax-grid">
+            <script>
+                for (let i = 1; i <= 16; i++) {  
+                    document.write(`<div class="parallax-item speed-${i % 3}" style="background-image: url('images/img${i}.jpg');"></div>`);
+                }
+            </script>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <header>
+            <h1 class="fade-in">Welcome to Incredible India</h1>
+            <p class="fade-in delay">Your Virtual Guide to Explore the Wonders of India</p>
+            <button class="cta-button" onclick="window.location.href='Explore/explore.html'">Start Exploring</button>
+        </header>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h2>About the Creator</h2>
+                <p2>Designed & Developed by </br><strong>Akanksha Sharma - 22MIC0813</br> </strong></p2>
+                <p>Code on:   
+                    <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+                </p>
+            </div>
+<!-- 
+            <div class="footer-misc">
+                <h2>Miscellaneous</h2>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <p>© 2025 Incredible India. All Rights Reserved.</p>
+            </div> -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
