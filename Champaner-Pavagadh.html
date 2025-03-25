@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Jaipur Heritage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            background: url('imgg.2.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            color: #f8e1c4;
+        }
+        header {
+            width: 100%;
+            background: rgba(139, 69, 19, 0.9);
+            padding: 20px 0;
+            font-size: 2rem;
+            font-family: 'Garamond', serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+        }
+        h1{
+            color: black;
+            background-color: rgba(240, 248, 255, 0.147);
+        }
+        p{
+            color: black;
+            background-color: rgba(249, 249, 249, 0.6);
+        }
+        .logo a {
+            text-decoration: none;
+            color: #f8e1c4;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .title {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            position: relative;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #f8e1c4;
+            font-size: 1rem;
+            padding: 10px;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background: rgba(139, 69, 19, 0.9);
+            list-style: none;
+            padding: 10px;
+            top: 100%;
+            left: 0;
+            width: 180px;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 80%;
+        }
+        .content-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+        }
+        .image-container {
+            flex: 1;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        .text-container {
+            flex: 1;
+            text-align: left;
+        }
+        .info-section {
+            width: 80%;
+            background: rgba(139, 69, 19, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .blog-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            gap: 20px;
+        }
+        .blog-card {
+            background: rgba(139, 69, 19, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 300px;
+        }
+        .blog-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .blog-card h3, .blog-card p, .blog-card a {
+            color: #f8e1c4;
+            margin-top: 10px;
+        }
+        footer {
+            width: 100%;
+            background: rgba(139, 69, 19, 0.9);
+            padding: 10px 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="#">Home</a></div>
+        <div class="title">Welcome to Gujarat</div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Explore ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Points of Interest</a></li>
+                        <li><a href="#">Travel Tips</a></li>
+                        <li><a href="#">Accommodation</a></li>
+                        <li><a href="#">More...</a></li>
+                        <li><a href="#">Favorites</a></li>
+                        <li><a href="#" id="exit">Exit</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content-container">
+            <div class="image-container">
+                <img src="imgg.1.jpg" alt="Hawa Mahal, Jaipur">
+            </div>
+            <div class="text-container">
+                <h1>Champaner-Pavagadh Archaeological Park</h1>
+                <p>Champaner-Pavagadh Archaeological Park, a UNESCO World Heritage Site, is a hidden gem in Gujarat's Panchmahal district. It’s centered around the historic city of Champaner, which dates back to the 8th century. The city was founded by Vanraj Chavda, the most renowned king of the Chavda Dynasty, who named it after his dear friend and general, Champa—later known as Champaraj.
+
+                    This heritage site is like a time capsule, packed with forts and bastions that stretch from the rugged hills of Pavagadh down into the city of Champaner. It offers a mix of archaeological ruins, historical landmarks, and even sites still in use today. You’ll find everything from ancient Chalcolithic settlements and an old Hindu hill fortress to the remains of Gujarat’s 16th-century capital.
+                    
+                    The park is a treasure trove of history, featuring grand palaces, intricately designed entrance gates, towering arches, majestic mosques, ancient tombs, and beautifully carved temples. Scattered across the landscape, you’ll also come across stepwells, reservoirs, and other water structures that date as far back as the 8th to 14th centuries.
+                    
+                    One of the most iconic spots here is the Kalika Mata Temple, perched at the top of the 800-meter-high Pavagadh Hill. It’s a significant Hindu pilgrimage site, drawing devotees from far and wide all year round.
+                    
+                    What makes this place even more fascinating is how it showcases the transition from Hindu to Islamic culture and architecture in the late 15th to early 16th century. The early Islamic and pre-Mughal city remains largely untouched, preserving a slice of history as it once was.
+                    
+                    Recognizing its cultural and historical significance, UNESCO declared it a World Heritage Site in 2004. If you’re a history buff or just love exploring ancient wonders, this is a place that should definitely be on your list!</p>
+                
+            </div>
+        </div>
+        <section class="info-section">
+            <h2>Why Visit Champaner-Pavagadh?</h2>
+            <p>Rich in history and culture, this site blends Hindu and Islamic architectural marvels...</p>
+        </section>
+        <section class="info-section">
+            <h2>Finding hotels?</h2>
+            <p><a href="https://www.bing.com/travel/hotel-search?form=HTSRPT&q=Champaner-Pavagadh%2C+Gujarat&entrypoint=HTSRPT&cin=2025-04-09&cout=2025-04-10">Click Here</a></p>
+        </section>
+        <section class="blog-grid">
+            <article class="blog-card">
+                <img src="imgg.3.jpg" alt="Gujarat">
+                <h3>Ahmedabad: 2-Day 1-Night Gujarat Tour with Statue of Unity</h3>
+                <a href="https://www.getyourguide.com/ahmedabad-l2635/gujarat-tour-package-1-night-2-days-statue-of-unity-t512168/?ranking_uuid=30b188b3-df4f-408f-8776-2668014c7ebc">Read More</a>
+                <p>Ahmedabad, Gujarat</p>
+            </article>
+            <article class="blog-card">
+                <img src="imgg.4.jpg" alt="AP">
+                <h3>Gujarat: Gir National Park Guided Jeep Safari</h3>
+                <a href="https://www.getyourguide.com/gujarat-l2634/jeep-safari-gir-national-park-safari-skip-the-line-entry-t476373/?ranking_uuid=30b188b3-df4f-408f-8776-2668014c7ebc">Read More</a>
+                <p>Gir National Park</p>
+            </article>
+            <article class="blog-card">
+                <img src="imgg.5.jpg" alt="Manipur">
+                <h3>Ahmedabad Day Tour with Mahatma Gandhi's Home</h3>
+                <a href="https://www.getyourguide.com/ahmedabad-l2635/ahmedabad-day-tour-with-mahatma-gandhi-s-home-t702376/?ranking_uuid=2137da56-6324-400a-b710-aa08f9775273">Read More</a>
+                <p>Sabarmati Ashram, Gujarat</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Gujarat Tourism. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
