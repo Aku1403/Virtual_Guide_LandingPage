@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #F4F3EE;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #00241B;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+.hire-btn {
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #CE8964;
+    width: 200px;
+    top: 40px;
+    left: 0;
+    right: 40px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    color: white;
+}
+
+.hero {
+    background: url('images/img1.jpg') no-repeat center center/cover;
+    padding: 80px;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 100px;
+    color: #00241B;
+    font-weight: bold;
+}
+
+.inspiration {
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+}
+
+.blog-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.blog-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.blog-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.blog-card a {
+    color: red;
+    text-decoration: none;
+}
+
+.blog-card p {
+    color: gray;
+    font-size: 14px;
+}
